@@ -1,7 +1,9 @@
 
 name: Manual deploy to heroku
 
-on: workflow_dispatch
+on: 
+  push:
+    branches: ['master']
 
 jobs:
   release:

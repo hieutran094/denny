@@ -170,7 +170,7 @@ iframe {
 }
 
 .container-main {
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   width: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -244,7 +244,7 @@ iframe {
 
 .btn-google::before,
 .btn-face::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   z-index: -1;
@@ -303,6 +303,9 @@ iframe {
 .wrap-input100 {
   width: 100%;
   position: relative;
+}
+
+.wrap-input100 input {
   background-color: #c4c4c4;
   border: 1px solid #e6e6e6;
   border-radius: 10px;
@@ -408,7 +411,7 @@ iframe {
 }
 
 .login100-form-btn::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   z-index: -1;
@@ -466,7 +469,7 @@ iframe {
 }
 
 .alert-validate::after {
-  content: "\f12a";
+  content: '\f12a';
   font-family: FontAwesome;
   display: block;
   position: absolute;

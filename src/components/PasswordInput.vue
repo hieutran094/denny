@@ -16,11 +16,21 @@
       style="font-size: 22px"
       @click="toggle"
     ></i>
+    <span v-if="!isValid" class="txt2 m-t-15 m-l-15">
+      Must at least 8 characters
+    </span>
   </div>
 </template>
 <script>
 export default {
   name: "PassordComponent",
+  props: {
+    isValid: {
+      type: [Boolean],
+      required: false,
+      default: true,
+    },
+  },
   data() {
     return {
       isShow: false,
@@ -39,13 +49,13 @@ export default {
 </script>
 
 <style scoped>
-.has-feedback {
-  padding-right: 25px;
+.has-feedback input {
+  padding-right: 60px;
 }
 .form-control-feedback {
   position: absolute;
   top: 0.5rem;
-  right: 1rem;
+  right: 1.5rem;
   z-index: 2;
   display: block;
   text-align: center;
