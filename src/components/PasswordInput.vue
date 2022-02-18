@@ -8,6 +8,7 @@
       :type="isShow ? 'text' : 'password'"
       name="pass"
       placeholder="Enter your password"
+      autocomplete="false"
     />
     <i
       class="bi form-control-feedback"

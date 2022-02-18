@@ -1,5 +1,5 @@
 import Login from "../views/login/Index.vue";
-
+import ChangePassword from "../views/changePassword/Index.vue";
 const routes = [
   {
     path: "/",
@@ -10,6 +10,11 @@ const routes = [
     path: "/login",
     name: "login",
     component: Login,
+  },
+  {
+    path: "/change-password",
+    name: "changePass",
+    component: ChangePassword,
   },
 ];
 

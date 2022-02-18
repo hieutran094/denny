@@ -28,7 +28,9 @@
       </div>
 
       <div class="container-login100-form-btn m-t-17">
-        <button class="login100-form-btn">Sign In</button>
+        <router-link tag="button" class="login100-form-btn" to="/change-password"
+          >Sign In</router-link
+        >
       </div>
     </form>
   </div>
